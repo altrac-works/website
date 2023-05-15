@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Alabama Transgender Rights Action Coalition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+* {
+    --white: #ffffff;
+    --trans-blue: #64C9F9;
+    --trans-pink: #F0A5B7;
+    --gray: #AAAAAA;
+
+    font-family: 'Cantarell', sans-serif;
+    color: #000000;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 110%;
+    line-height: 1.6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--trans-pink);
+    padding: 0.5em 1em;
+}
+
+header h1 {
+    font-size: 200%;
+}
+
+footer {
+    background-color: var(--gray);
+    padding: 0.5em 1em;
+}
+
+main {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+main div {
+    flex: 1;
+}
+
+.link-btn {
+    display: block;
+    font-size: 1.3em;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    background-color: var(--trans-blue);
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.mobile-only { display: none; }
+.not-mobile { display: block; }
+
+.nobreak { white-space: nowrap; }
+
+@media(max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+    .link-btn {
+        margin: 1em 0;
+    }
+    .not-mobile { display: none; }
+    .mobile-only { display: block; }
+
+    header h1 { font-size: 1.3em; }
+}
+</style>
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">ALTRAC</a> &middot; Printable resources</h1>
+        </header>
+        <main>
+            <div>
+                <ul>
+                    <li><a href="flyer1.png">Flyer 1</a> (8.5" x 11", gradient background, PNG/raster)</li>
+                    <li><a href="flyer2.pdf">Flyer 2</a> (8.5" x 11", white background/printer friendly, PDF/vector)</li>
+                    <li><a href="postcard.png">Postcard</a> (5" x 7", white background/printer friendly, PNG/raster)</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            Questions or comments? Send us an email: <a href="mailto:info@altrac.works">info@altrac.works</a>
+        </footer>
+    </body>
+</html>

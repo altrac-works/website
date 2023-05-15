@@ -1,0 +1,7 @@
+<body>
+    <script>
+        var value = document.cookie.split("; ").find((row) => row.startsWith("name"))?.split("=")[1]
+        if(value) location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd090uOY6tlHkvlvcitlHux9edH1O63R_-hScrHZWr0W8KrDw/viewform?usp=pp_url&entry.1850920358=" + value;
+        else location.href = "/contact/";
+    </script>
+</body>
