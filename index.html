@@ -49,8 +49,15 @@ body {
 header {
     background-color: var(--trans-pink);
     padding: 0.5em 1em;
+    
+    display: grid;
+    grid-template-columns: 140px auto;
+    align-items: center;
 }
-
+header img {
+    width: 140px;
+    padding-right: 1em;
+}
 header h1 {
     font-size: 200%;
 }
@@ -87,6 +94,9 @@ main div {
 
 .nobreak { white-space: nowrap; }
 
+@media(min-width: 600px) {
+    .absurdnobreakhackforheader { white-space: nowrap; }
+}
 @media(max-width: 900px) {
     main {
         flex-direction: column;
@@ -104,7 +114,8 @@ main div {
     </head>
     <body>
         <header>
-            <h1>Alabama Transgender Rights Action Coalition</h1>
+            <img src="img/logoCv2.svg">
+            <h1>Alabama Transgender Rights <span class="absurdnobreakhackforheader">Action Coalition</span></h1>
         </header>
         <main>
             <div>
