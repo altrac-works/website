@@ -1,0 +1,95 @@
+* {
+    --white: #ffffff;
+    --trans-blue: #64C9F9;
+    --trans-pink: #F0A5B7;
+    --gray: #AAAAAA;
+
+    font-family: 'Cantarell', sans-serif;
+    color: #000000;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 110%;
+    line-height: 1.6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--trans-pink);
+    padding: 0.5em 1em;
+    
+    display: grid;
+    grid-template-columns: 140px auto;
+    align-items: center;
+}
+header img {
+    width: 140px;
+    padding-right: 1em;
+}
+header h1 {
+    font-size: 200%;
+}
+
+footer {
+    background-color: var(--gray);
+    padding: 0.5em 1em;
+}
+
+main {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+main div {
+    flex: 1;
+}
+
+.link-btn {
+    display: block;
+    font-size: 1.3em;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    background-color: var(--trans-blue);
+    text-decoration: none;
+    border-radius: 20px;
+}
+button.link-btn {
+    /* lol */
+    margin-left: 0;
+    border: 0;
+}
+input {
+    font-size: 2em;
+}
+
+.mobile-only { display: none; }
+.not-mobile { display: block; }
+
+.nobreak { white-space: nowrap; }
+
+@media(min-width: 600px) {
+    .absurdnobreakhackforheader { white-space: nowrap; }
+}
+@media(max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+    .link-btn {
+        margin: 1em 0;
+    }
+    .not-mobile { display: none; }
+    .mobile-only { display: block; }
+
+    header h1 { font-size: 1.3em; }
+}
