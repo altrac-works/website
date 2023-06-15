@@ -73,6 +73,19 @@ input {
     font-size: 2em;
 }
 
+/*Support page shenanigans*/
+ol.list-with-links {
+    list-style-type:none;
+    padding:0;
+}
+ol.list-with-links li {
+    display:flex;
+    border-top:1px solid lightgray;
+}
+ol.list-with-links li * {
+    flex:1;
+}
+
 .mobile-only { display: none; }
 .not-mobile { display: block; }
 
@@ -92,4 +105,8 @@ input {
     .mobile-only { display: block; }
 
     header h1 { font-size: 1.3em; }
+
+    ol.list-with-links li {
+        flex-direction:column;
+    }
 }
