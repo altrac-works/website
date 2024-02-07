@@ -38,6 +38,19 @@ header h1 {
     font-size: 200%;
 }
 
+aside.promotion {
+    background-color:#FFB5C7;
+    padding:16px;
+    font-weight:bold;
+    font-size:1.15em;
+}
+aside.promotion a {
+    text-decoration:none;
+}
+aside.promotion a .fake-link {
+    text-decoration:underline;
+}
+
 footer {
     background-color: var(--gray);
     padding: 0.5em 1em;
