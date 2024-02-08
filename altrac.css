@@ -42,13 +42,19 @@ aside.promotion {
     background-color:#FFB5C7;
     padding:16px;
     font-weight:bold;
-    font-size:1.15em;
+    font-size:1.05em;
+    /*ok ally*/
+    text-align:center;
 }
 aside.promotion a {
     text-decoration:none;
 }
 aside.promotion a .fake-link {
     text-decoration:underline;
+}
+aside.promotion a em {
+    display:block; /*ok ally*/
+    font-size:1.15em;
 }
 
 footer {
