@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log("source code = ", src);
     if ( src !== null ) {
         console.log("setting src cookie");
-        document.cookie = "src=" + src;
+        document.cookie = "src=" + src + ";path=/";
     }
 
 }, false);
