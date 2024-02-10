@@ -57,6 +57,17 @@ aside.promotion a em {
     font-size:1.15em;
 }
 
+/* a little counterintuitive but remember nav is right above footer (20240209) */
+nav {
+    background-color:lightgray;
+    padding: 0.5em 1em;
+}
+nav :not(:last-child):after {
+    content:" • ";
+    text-decoration:none;
+    display:inline-block;
+    margin-left:5px; /* ??? caused by inline-block, why is it uneven tho */
+}
 footer {
     background-color: var(--grAAAAAAy);
     padding: 0.5em 1em;
