@@ -38,8 +38,23 @@ header h1 {
     font-size: 200%;
 }
 
-aside.promotion {
+/*The weirdness is if we have 2 of these,
+ * the first one will be blue and the second
+ * one will be #FFB5C7. This is because for
+ * 2024 we planned a rally and now we're packing
+ * the state house lol. So we need a banner
+ * bc the rally is already announced, but we need
+ * an EVEN MORE IMPORTANT banner for the state
+ * house. SMH.
+ * Of course the real behavior is that all but
+ * the last one will be blue, and the last one
+ * will be #FFB5C7. But god help us if we ever
+ * have more than 2 banners. */
+aside.promotion:last-of-type {
     background-color:#FFB5C7;
+}
+aside.promotion {
+    background-color:var(--trans-blue);
     padding:16px;
     font-weight:bold;
     font-size:1.05em;
