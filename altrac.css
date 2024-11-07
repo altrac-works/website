@@ -139,6 +139,13 @@ ol.list-with-links li * {
 @media(min-width: 600px) {
     .absurdnobreakhackforheader { white-space: nowrap; }
 }
+/*pride in the park*/
+@media(min-width: 900px) {
+    main img {
+        max-width:40%;
+        margin:24px;
+    }
+}
 @media(max-width: 900px) {
     main {
         flex-direction: column;
