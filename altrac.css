@@ -131,6 +131,24 @@ ol.list-with-links li * {
     flex:1;
 }
 
+/*social media share buttons*/
+.socials {
+    text-align:center;
+    border: 2px dashed var(--trans-blue);
+    padding: 0.3em 0;
+}
+.button-row {
+    display:flex;
+}
+.button-row * {
+    flex:1;
+}
+.button-row .link-btn {
+    margin:.25em;
+    padding:.75em;
+    font-size:min(1.1em, 6vw);
+}
+
 .mobile-only { display: none; }
 .not-mobile { display: block; }
 
@@ -145,6 +163,9 @@ ol.list-with-links li * {
         max-width:40%;
         margin:24px;
         height:min-content; /*otherwise it freaking grows to the height of the other flex thing*/
+    }
+    .button-row {
+        padding:0 1em;
     }
 }
 @media(max-width: 900px) {
