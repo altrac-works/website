@@ -150,7 +150,7 @@ ol.list-with-links li * {
 }
 
 .mobile-only { display: none; }
-.not-mobile { display: block; }
+/*.not-mobile { display: block; }*/
 
 .nobreak { white-space: nowrap; }
 
