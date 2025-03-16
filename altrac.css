@@ -48,6 +48,7 @@ main div {
 	flex: 1;
 }
 
+/* a little counterintuitive but remember nav is right above footer (20240209) */
 nav {
 	background-color: var(--lightgray);
 	padding: 0.5rem 1rem;
@@ -157,6 +158,18 @@ aside.promotion a em {
 	font-size: 1.15rem;
 }
 
+/*The weirdness is if we have 2 of these,
+ * the first one will be blue and the second
+ * one will be #FFB5C7. This is because for
+ * 2024 we planned a rally and now we're packing
+ * the state house lol. So we need a banner
+ * bc the rally is already announced, but we need
+ * an EVEN MORE IMPORTANT banner for the state
+ * house. SMH.
+ * Of course the real behavior is that all but
+ * the last one will be blue, and the last one
+ * will be #FFB5C7. But god help us if we ever
+ * have more than 2 banners. */
 aside.promotion:last-of-type {
 	background-color: var(--trans-pink-contrast);
 }
