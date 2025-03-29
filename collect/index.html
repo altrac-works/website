@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Alabama Transgender Rights Action Coalition</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="/altrac.css">
-    </head>
-    <body>
-        <header>
-            <img src="/img/logoCv2.svg">
-            <h1><a href="/">ALTRAC</a> &middot; Contact collection</h1>
-        </header>
-        <main>
-            <div>
-                <label for="name">Your name (so we can attribute your contacts correctly)</label>
-                <input type="text" name="name" id="name" style="width: 100%;" />
-                <button class="link-btn" id="btn" style="width: 100%;">Go to form</button>
-                <hr />
-                <a class="link-btn" href="https://docs.google.com/document/d/1RKAkrk7GQhIxjjvp1U_igpfmaE0M2uWl0c73Pnnck_Q/edit#">Read instructions/info</a>
-            </div>
-        </main>
-        <footer>
-            Questions or comments? Send us an email: <a href="mailto:info@altrac.works">info@altrac.works</a>
-        </footer>
-        <script>
-            var value = document.cookie.split("; ").find((row) => row.startsWith("name"))?.split("=")[1]
-            if(value) document.getElementById("name").value = decodeURIComponent(value);
 
-            document.getElementById("btn").addEventListener("click", function() {
-                var name = encodeURIComponent(document.getElementById("name").value);
-                document.cookie = "name=" + name;
-                location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd090uOY6tlHkvlvcitlHux9edH1O63R_-hScrHZWr0W8KrDw/viewform?usp=pp_url&entry.1850920358=" + name;
-            });
-        </script>
-    </body>
+	<head>
+		<title>Alabama Transgender Rights Action Coalition</title>
+		<meta name="viewport"
+					content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet"
+					href="/altrac.css">
+	</head>
+
+	<body>
+		<header>
+			<img src="/img/logoCv2.svg">
+			<h1><a href="/">ALTRAC</a> &middot; Contact collection</h1>
+		</header>
+		<main>
+			<div>
+				<label for="name">Your name (so we can attribute your contacts
+					correctly)</label>
+				<input type="text"
+							 name="name"
+							 id="name"
+							 style="width: 100%;" />
+				<button class="link-btn"
+								id="btn"
+								style="width: 100%;">Go to form</button>
+				<hr />
+				<a class="link-btn"
+					 href="https://docs.google.com/document/d/1RKAkrk7GQhIxjjvp1U_igpfmaE0M2uWl0c73Pnnck_Q/edit#">Read
+					instructions/info</a>
+			</div>
+		</main>
+		<footer>
+			Questions or comments? Send us an email: <a
+				 href="mailto:info@altrac.works">info@altrac.works</a>
+		</footer>
+		<script>
+			var value = document.cookie.split("; ").find((row) => row.startsWith("name"))?.split("=")[1];
+			if (value) document.getElementById("name").value = decodeURIComponent(value);
+
+			document.getElementById("btn").addEventListener("click", function () {
+				var name = encodeURIComponent(document.getElementById("name").value);
+				document.cookie = "name=" + name;
+				location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd090uOY6tlHkvlvcitlHux9edH1O63R_-hScrHZWr0W8KrDw/viewform?usp=pp_url&entry.1850920358=" + name;
+			});
+		</script>
+	</body>
+
 </html>
