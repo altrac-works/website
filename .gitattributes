@@ -4,7 +4,6 @@
 *.htm text diff=html
 *.html text diff=html
 *.py text diff=python
-*.scss text diff=css
 *.markdown text diff=markdown
 *.md text diff=markdown
 
