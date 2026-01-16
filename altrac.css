@@ -1,3 +1,8 @@
+/* NOTE WELL: This CSS affects the Action Network page wrapper
+ * we use for letter campaigns. Clear cache and check on a letter
+ * campaign (hopefully linked from the homepage) after you make an
+ * update. thank u :) */
+
 * {
     --white: #ffffff;
     --trans-blue: #64C9F9;
