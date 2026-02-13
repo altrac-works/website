@@ -1,0 +1,17 @@
+* text=auto
+
+*.css text diff=css
+*.htm text diff=html
+*.html text diff=html
+*.py text diff=python
+*.markdown text diff=markdown
+*.md text diff=markdown
+
+*.gif binary
+*.ico binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.png binary
+*.svg text
+*.webp binary

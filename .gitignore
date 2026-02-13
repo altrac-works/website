@@ -1,10 +1,6 @@
 .*.swp
-
 */*
 index.html
-
 !text/*
 !img/*
 !js/*
-
-
